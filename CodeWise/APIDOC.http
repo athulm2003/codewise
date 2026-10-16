@@ -1,0 +1,41 @@
+###
+GET http://127.0.0.1:8000/question/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/question/
+Content-Type: application/json
+
+{
+    "title" : "Factorial of a Number",
+    "language" :"python",
+    "difficulty_level" :"" ,
+    "topic" : "Loops",
+    "notes": "This question is about calculating the factorial of a given number using loops.",
+    "sample_input" : "",
+    "sample_output" : "",
+    "is_active" : true
+}
+
+###
+GET http://127.0.0.1:8000/question/2/
+Accept: application/json
+
+###
+PUT  http://127.0.0.1:8000/question/2/
+Content-Type: application/json
+
+{
+    "title" : "Fibanocci sequence",
+    "language" : "python",
+    "difficulty_level" :"easy" ,
+    "topic" : "Loops",
+    "notes": "This question is about to solve  the Fibanocci  sequence",
+    "sample_input" : "7",
+    "sample_output" : "120",
+    "is_active" : true
+}
+
+###
+DELETE http://127.0.0.1:8000/question/2/
