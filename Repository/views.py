@@ -32,7 +32,7 @@ class QuestionCreateView(APIView):
             QuestionDb.objects.create(**actual_data)
 
             return Response(data={"Message" : "Question added Successfully"})
-        
+    
         else:
             return Response(data={"errors" : serializer_instance.errors })
 
